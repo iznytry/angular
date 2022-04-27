@@ -1,0 +1,24 @@
+{
+  "name": "store_app_markup",
+  "homepage": "",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "predeploy": "rm -rf dist && parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "@angular/core": "^13.3.4",
+    "@angular/platform-browser": "^13.3.4"
+  }
+}
