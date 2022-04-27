@@ -1,33 +1,28 @@
-<div class="selected-program-container">
-  <header class="selected-program-header">
+<div class="selected-article-container">
+  <header class="selected-article-header">
     <div>
       <h2>
-        {{ selectedProgram.name }}
+        {{ selectedArticle.name }}
       </h2>
-
-      <p>
-        Сложность тренировки {{ getComplexityLabel(selectedProgram.complexity) }}
-      </p>
     </div>
 
-    <div class="program-time">
+    <div class="article-time">
       <img src="assets/clock.svg" alt='clock' />
-      {{selectedProgram.duration}} минут
+      {{selectedArticle.duration}} мин
     </div>
   </header>
 
-  <ul class="exercises-list">
+  <ul class="articles-list">
     <app-exersize
-      *ngFor="let exersize of selectedProgram.exersizes"
-      [exersize]="exersize"
+      *ngFor=""
+      [article]="article"
     >
-    </app-exersize>
+    </app-article>
   </ul>
 
   <button
-    class="selected-program-button"
+    class="selected-article-button"
     (click)="closeSelected()"
   >
-    ✔ Выполнено
   </button>
 </div>
