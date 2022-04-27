@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "@angular/core": "^13.3.4",
-    "@angular/platform-browser": "^13.3.4"
+    "@angular/platform-browser": "^13.3.4",
+    "@parcel/core": "^2.5.0",
+    "@parcel/reporter-dev-server": "^2.5.0"
   }
 }
