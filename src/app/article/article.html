@@ -1,0 +1,38 @@
+<li class='article'>
+  <img
+    class='article-image'
+    [src]="article.image"
+    alt='Article background'
+  />
+
+  <div class='article-info'>
+    <h2>
+      {{article.name}}
+    </h2>
+    <p>
+      
+    </p>
+
+    <div class="article-details">
+        <div class="article-time">
+          <img src='pictures/clock.svg' alt="clock icon" />
+          {{article.duration}} мин
+        </div>
+
+        <div class="article-markers">
+          <app-category
+            *ngFor="let category of article.categories"
+            [category]="category"
+          >
+          </app-category>
+        </div>
+    </div>
+
+    <button
+      [class]="{'article-button': true, 'selected': isSelected}"
+      (click)="setSelected(article)"
+    >
+      <img src='pictures/arrow-bottom.svg' alt="Select article button" />
+    </button>
+  </div>
+</li>

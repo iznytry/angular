@@ -1,0 +1,30 @@
+.selected-article-container {
+  position: relative;
+  flex-basis: 50%;
+  padding: 30px 30px 0 60px;
+  background: #c94c4c ;
+  border-radius: 36px;
+}
+
+.selected-article-button {
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.article-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+
+  color: #B14DFF;
+}
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}

@@ -1,0 +1,19 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+
+  background: #ff6f69;
+  border-radius: 19px;
+}
+
+.product-name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+

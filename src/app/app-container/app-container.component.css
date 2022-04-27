@@ -1,0 +1,14 @@
+.container {
+  padding: 60px 80px 80px 80px;
+}
+
+.selected_program_container {
+  flex-basis: 50%;
+}
+
+@media (max-width: 1440px) {
+  .app-container {
+    flex-direction: column;
+    gap: 90px;
+  }
+}
